@@ -1,0 +1,20 @@
+.employee-page{
+  height: 100vh;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .employee-page-left-log-and-graph{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .employee-page-section{
+    height: 83vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

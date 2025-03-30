@@ -1,0 +1,18 @@
+.employee-page-graph{
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  background: #E4EFE7;
+  padding: 30px;
+  border-radius: 30px;
+
+  .employee-page-graph-title {
+    text-align: center;
+    color: #000;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

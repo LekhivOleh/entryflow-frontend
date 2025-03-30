@@ -1,1 +1,6 @@
-<p>employee-page-log works!</p>
+<div *ngIf="employee" class="employee-page-info">
+  <h1 class="employee-page-info-name">{{ employee.name }}'s log for {{employee.time?.toLocaleString()}}</h1>
+  <h3 class="employee-page-info-action-time">First {{ employee.action ? "entered" : ""}} on {{employee.time?.toLocaleString()}}</h3>
+  <h3 class="employee-page-info-time-overall">Overall worked for ...</h3>
+</div>
+
