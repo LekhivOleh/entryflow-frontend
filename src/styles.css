@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inria Sans';
+  src: url('app/shared/fonts/InriaSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,39 @@
+.header {
+  background: #99BC85;
+  max-width: 1850px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 45px;
+
+  .header-title{
+    padding: 20px 0 20px 65px;
+
+    color: #FDFAF6;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .header-button{
+    margin: 10px 10px 10px 0;
+    padding: 19px 43px;
+    border-radius: inherit;
+    border: none;
+    background-color: #E4EFE7;
+
+    color: rgba(0, 0, 0, 0.50);
+    font-family: "Inria Sans", sans-serif;
+    font-size: 35px;
+    &:hover{
+      color: #99BC85;
+      cursor: pointer;
+      outline: 2px solid #99BC85;
+      text-shadow: 1px 1px #99BC85;
+    }
+    transition: all 0.3s ease-in-out;
+  }
+}
