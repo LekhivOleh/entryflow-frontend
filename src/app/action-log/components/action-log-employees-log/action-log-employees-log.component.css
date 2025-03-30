@@ -1,0 +1,66 @@
+.action-log-employees-log {
+  width: 130vh;
+  height: 83vh;
+  border-radius: 30px;
+  background: #E4EFE7;
+  padding: 30px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.action-log-employees-log-titles {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background: #E4EFE7;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.action-log-employees-log-title-name,
+.action-log-employees-log-title-action {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: "Inria Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.employee-log-container {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #99BC85 transparent;
+}
+
+.employee-log-container-instance {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-log-container-instance-employee-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.employee-name,
+.employee-log-action-and-time {
+  font-family: "Inria Sans", sans-serif;
+  color: #000;
+  font-size: 50px;
+  font-weight: 200;
+  align-self: center;
+  justify-self: center;
+}
+
+hr {
+  border: none;
+  height: 5px;
+  width: 80%;
+  background: #99BC85;
+  border-radius: 30px;
+  margin: 2% auto;
+}
