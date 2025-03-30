@@ -1,0 +1,46 @@
+.action-log-employees-tab {
+  height: 83vh;
+  width: 50vh;
+  border-radius: 30px;
+  background: #E4EFE7;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.action-log-employees-tab-title {
+  width: fit-content;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.50);
+  font-family: "Inria Sans", sans-serif;
+  font-size: 40px;
+  line-height: normal;
+  font-weight: 200;
+}
+
+.action-log-employees-tab-employees-tab {
+  flex: 1;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px 0;
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: #99BC85 transparent;
+}
+
+.employee-name {
+  text-align: center;
+  color: #000;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  &:hover{
+    cursor: pointer;
+    font-size: 55px;
+  }
+  transition: all .3s ease-in-out;
+}

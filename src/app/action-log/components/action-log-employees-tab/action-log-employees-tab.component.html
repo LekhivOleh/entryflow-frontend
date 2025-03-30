@@ -1,0 +1,6 @@
+<section class="action-log-employees-tab">
+  <h2 class="action-log-employees-tab-title">Employees:</h2>
+    <div class="action-log-employees-tab-employees-tab" >
+      <h2 class="employee-name" [routerLink]="['/employee', employee.id]" *ngFor="let employee of employees" >{{employee.name}}</h2>
+    </div>
+</section>
