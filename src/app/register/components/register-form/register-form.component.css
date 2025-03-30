@@ -1,0 +1,51 @@
+.register-form{
+  padding: 30px 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+  background: #FDFAF6;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 45px;
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);
+
+  .register-label{
+    color: #000;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .register-input{
+    border-radius: 45px;
+    background: #E4EFE7;
+    border: none;
+    outline: none;
+    padding: 28px 180px 28px 39px;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  .register-button{
+    text-align: center;
+    padding: 22px 89px;
+    border-radius: 45px;
+    background: #99BC85;
+    border: none;
+    outline: none;
+
+    color: #FDFAF6;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .register-to-login-text{
+    font-family: "Inria Sans", sans-serif;
+  }
+}
