@@ -27,7 +27,7 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'employee/:employeeId',
+    path: 'employee/:id',
     loadComponent: () => {
       return import('./employee-page/employee-page.component').then(m => m.EmployeePageComponent);
     }

@@ -1,0 +1,31 @@
+.employee-page-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+  width: 85vh;
+  padding: 35px;
+  background: #E4EFE7;
+  border-radius: 30px;
+
+  .employee-page-info-name{
+    color: #000;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .employee-page-info-action-time,
+  .employee-page-info-time-overall{
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: "Inria Sans",sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
