@@ -12,7 +12,8 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 export class HeaderComponent {
   ifLogout = signal(false);
   handleLogout() {
-    console.log("logout");
-    this.ifLogout.set(true);
+    document.cookie = 'jwt=; Max-Age=0; path=/';
+    localStorage.removeItem('jwt');
+    window.location.href = '/login';
   }
 }

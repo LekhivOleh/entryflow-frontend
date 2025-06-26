@@ -13,12 +13,13 @@ export interface Employee {
 @Injectable({
   providedIn: 'root'
 })
+
 export class EmployeeService {
   private apiUrl = 'http://localhost:5085/Employee';
 
   constructor(private http: HttpClient) {}
 
-  getEmployees(): Observable<Employee[]> {
-    return this.http.get<Employee[]>(this.apiUrl);
+  getEmployeesByAdmin(email: string): Observable<Employee[]> {
+    return this.http.get<Employee[]>(`${this.apiUrl}/by-admin/${email}`);
   }
 }

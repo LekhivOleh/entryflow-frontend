@@ -14,7 +14,7 @@
   .register-label{
     color: #000;
     font-family: "Inria Sans", sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -25,7 +25,7 @@
     background: #E4EFE7;
     border: none;
     outline: none;
-    padding: 28px 180px 28px 39px;
+    padding: 15px 180px 15px 39px;
     color: rgba(0, 0, 0, 0.50);
     font-size: 20px;
     font-weight: 400;
@@ -34,7 +34,7 @@
 
   .register-button{
     text-align: center;
-    padding: 22px 89px;
+    padding: 15px 89px;
     border-radius: 45px;
     background: #99BC85;
     border: none;

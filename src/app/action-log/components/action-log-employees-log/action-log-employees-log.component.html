@@ -4,14 +4,19 @@
     <h3 class="action-log-employees-log-title-action">Action:</h3>
   </div>
   <div class="employee-log-container">
-    <div class="employee-log-container-instance" *ngFor="let employee of employees; let i = index">
+    <div class="employee-log-container-instance" *ngFor="let logEntry of logs; let i = index">
       <div class="employee-log-container-instance-employee-info">
-        <h2 class="employee-name">{{ employee.name }}</h2>
+        <h2 class="employee-name">
+          {{ logEntry.employeeFirstName }} {{ logEntry.employeeLastName }}
+        </h2>
         <h2 class="employee-log-action-and-time">
-          {{ employee.action ? "Entered" : "Left" }}: {{ convertTime(employee.time) }}
+          {{ logEntry.action }}: {{ convertTime(logEntry.timestamp) }}
         </h2>
       </div>
-      <hr *ngIf="i !== employees.length - 1" />
+      <hr *ngIf="i !== logs.length - 1" />
+    </div>
+    <div *ngIf="logs.length === 0" class="p-4 text-center text-gray-500">
+      No employee activity logs found.
     </div>
   </div>
 </section>

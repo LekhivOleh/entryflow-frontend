@@ -5,10 +5,7 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadComponent: () => {
-      return import('./home/home.component').then(m => m.HomeComponent);
-    },
-    canActivate: [AuthGuard]
+    redirectTo: 'action-log'
   },
   {
     path: 'register',
@@ -29,11 +26,11 @@ export const routes: Routes = [
     },
     canActivate: [AuthGuard]
   },
-  {
-    path: 'employee/:id',
-    loadComponent: () => {
-      return import('./employee-page/employee-page.component').then(m => m.EmployeePageComponent);
-    },
-    canActivate: [AuthGuard]
-  }
+  // {
+  //   path: 'employee/:id',
+  //   loadComponent: () => {
+  //     return import('./employee-page/employee-page.component').then(m => m.EmployeePageComponent);
+  //   },
+  //   canActivate: [AuthGuard]
+  // }
 ];

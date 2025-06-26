@@ -1,9 +1,13 @@
-<form class="register-form">
+<form class="register-form" (submit)="$event.preventDefault(); register()">
   <label class="register-label">Register</label>
-  <input class="register-input" type="text" placeholder="Name..."/>
-  <input class="register-input" type="text" placeholder="Email address..."/>
-  <input class="register-input" type="text" placeholder="Password..."/>
-  <input class="register-input" type="text" placeholder="Confirm Password..."/>
-  <input class="register-button" type="button" value="Register"/>
+  <input class="register-input" type="text" placeholder="Name..." [(ngModel)]="firstName" name="firstName"/>
+  <input class="register-input" type="text" placeholder="Surname..." [(ngModel)]="lastName" name="lastName"/>
+  <input class="register-input" type="text" placeholder="Email address..." [(ngModel)]="email" name="email"/>
+  <input class="register-input" type="password" placeholder="Password..." [(ngModel)]="password" name="password"/>
+  <input class="register-input" type="password" placeholder="Confirm Password..." [(ngModel)]="confirmPassword" name="confirmPassword"/>
+  <input class="register-input" type="text" placeholder="Validator Secret..." [(ngModel)]="validatorSecret" name="validatorSecret"/>
+  <input class="register-button" type="submit" value="Register"/>
+  <div *ngIf="error" style="color: red;">{{ error }}</div>
+  <div *ngIf="success" style="color: green;">Registration successful!</div>
   <p class="register-to-login-text">Already have an account? <a routerLink="/login" routerLinkActive="active">Click here!</a></p>
 </form>
